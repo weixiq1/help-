@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Login V5</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<link rel="icon" type="image/png" href="images/icons/favicon.ico" />
+
+<link rel="stylesheet" type="text/css" href="vendor/bootstrap/css/bootstrap.min.css">
+
+<link rel="stylesheet" type="text/css" href="fonts/font-awesome-4.7.0/css/font-awesome.min.css">
+
+<link rel="stylesheet" type="text/css" href="fonts/Linearicons-Free-v1.0.0/icon-font.min.css">
+
+<link rel="stylesheet" type="text/css" href="vendor/animate/animate.css">
+
+<link rel="stylesheet" type="text/css" href="vendor/css-hamburgers/hamburgers.min.css">
+
+<link rel="stylesheet" type="text/css" href="vendor/animsition/css/animsition.min.css">
+
+<link rel="stylesheet" type="text/css" href="vendor/select2/select2.min.css">
+
+<link rel="stylesheet" type="text/css" href="vendor/daterangepicker/daterangepicker.css">
+
+<link rel="stylesheet" type="text/css" href="./css/util.css">
+<link rel="stylesheet" type="text/css" href="./css/main.css">
+
+<meta name="robots" content="noindex, follow">
+<script nonce="0facb2d5-6618-4bbd-8353-5e3447c6bcf6">(function(w,d){!function(dk,dl,dm,dn){dk[dm]=dk[dm]||{};dk[dm].executed=[];dk.zaraz={deferred:[],listeners:[]};dk.zaraz.q=[];dk.zaraz._f=function(dp){return function(){var dq=Array.prototype.slice.call(arguments);dk.zaraz.q.push({m:dp,a:dq})}};for(const dr of["track","set","debug"])dk.zaraz[dr]=dk.zaraz._f(dr);dk.zaraz.init=()=>{var ds=dl.getElementsByTagName(dn)[0],dt=dl.createElement(dn),du=dl.getElementsByTagName("title")[0];du&&(dk[dm].t=dl.getElementsByTagName("title")[0].text);dk[dm].x=Math.random();dk[dm].w=dk.screen.width;dk[dm].h=dk.screen.height;dk[dm].j=dk.innerHeight;dk[dm].e=dk.innerWidth;dk[dm].l=dk.location.href;dk[dm].r=dl.referrer;dk[dm].k=dk.screen.colorDepth;dk[dm].n=dl.characterSet;dk[dm].o=(new Date).getTimezoneOffset();if(dk.dataLayer)for(const dy of Object.entries(Object.entries(dataLayer).reduce(((dz,dA)=>({...dz[1],...dA[1]})))))zaraz.set(dy[0],dy[1],{scope:"page"});dk[dm].q=[];for(;dk.zaraz.q.length;){const dB=dk.zaraz.q.shift();dk[dm].q.push(dB)}dt.defer=!0;for(const dC of[localStorage,sessionStorage])Object.keys(dC||{}).filter((dE=>dE.startsWith("_zaraz_"))).forEach((dD=>{try{dk[dm]["z_"+dD.slice(7)]=JSON.parse(dC.getItem(dD))}catch{dk[dm]["z_"+dD.slice(7)]=dC.getItem(dD)}}));dt.referrerPolicy="origin";dt.src="/cdn-cgi/zaraz/s.js?z="+btoa(encodeURIComponent(JSON.stringify(dk[dm])));ds.parentNode.insertBefore(dt,ds)};["complete","interactive"].includes(dl.readyState)?zaraz.init():dk.addEventListener("DOMContentLoaded",zaraz.init)}(w,d,"zarazData","script");})(window,document);</script></head>
+<body>
+<div class="limiter">
+<div class="container-login100" style="background-image: url('images/bg-01.jpg');">
+<div class="wrap-login100 p-l-110 p-r-110 p-t-62 p-b-33">
+<form class="login100-form validate-form flex-sb flex-w" action="/register  " method="post">
+<span class="login100-form-title p-b-53">
+Sign Up
+</span>
+<div class="p-t-31 p-b-9">
+<span class="txt1">
+Email:
+<div class="wrap-input100 validate-input">
+<input class="input100" type="email" id="email" name="email" required>
+<span class="focus-input100"></span>
+</div>
+</span>
+</div>
+<div class="p-t-13 p-b-9">
+<span class="txt1">
+Password:
+<div class="wrap-input100 validate-input">
+<input class="input100" type="password" id="password" name="password" required>
+<span class="focus-input100"></span>
+</div>
+</span>
+</div>
+<div class="container-login100-form-btn m-t-17">
+<button type="submit" class="login100-form-btn" >
+Sign Up
+</button>
+</div>
+<div class="w-full text-center p-t-55">
+<span class="txt2">
+You a member?
+</span>
+<a href="/login" class="txt2 bo1">
+Sign in now
+</a>
+</div>
+</form>
+</div>
+</div>
+</div>
+<div id="dropDownSelect1"></div>
+
+<script src="vendor/jquery/jquery-3.2.1.min.js"></script>
+
+<script src="vendor/animsition/js/animsition.min.js"></script>
+
+<script src="vendor/bootstrap/js/popper.js"></script>
+<script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+
+<script src="vendor/select2/select2.min.js"></script>
+
+<script src="vendor/daterangepicker/moment.min.js"></script>
+<script src="vendor/daterangepicker/daterangepicker.js"></script>
+
+<script src="vendor/countdowntime/countdowntime.js"></script>
+
+<script src="js/main.js"></script>
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-23581568-13"></script>
+<script>
+	  window.dataLayer = window.dataLayer || [];
+	  function gtag(){dataLayer.push(arguments);}
+	  gtag('js', new Date());
+
+	  gtag('config', 'UA-23581568-13');
+	</script>
+<script defer src="https://static.cloudflareinsights.com/beacon.min.js/v52afc6f149f6479b8c77fa569edb01181681764108816" integrity="sha512-jGCTpDpBAYDGNYR5ztKt4BQPGef1P0giN6ZGVUi835kFF88FOmmn8jBQWNgrNd8g/Yu421NdgWhwQoaOPFflDw==" data-cf-beacon='{"rayId":"7c0d78fcfdbabcb1","token":"cd0b4b3a733644fc843ef0b185f98241","version":"2023.4.0","si":100}' crossorigin="anonymous"></script>
+</body>
+</html>
